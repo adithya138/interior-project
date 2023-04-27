@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="divided">
+      <img
+        src="data:image/png;base64,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"
+        alt=""
+      />
+      <!-- <img src=" https://image.shutterstock.com/image-vector/thick-hamburger-menu-bar-line-260nw-274138187.jpg" alt="">    -->
+    </div>
+
+    <div class="division">
+        <div class="divsion-1">
+            <div class="division-2">
+                <h1>BulidNext Homes</h1>
+          <p>
+            Bulid your dream project with our end-to-end <br />
+            design& bulid package powered by technology and<br />
+            executed by trusted professionals
+          </p>
+          <button>LEARN MORE</button>
+        </div>
+    </div>
+    <div class="division-1">
+        <div class="sub-division">
+        <form>
+            <div class="head">
+              <h2>Looking to bulid? Talk to us.</h2>
+            </div>
+            <div class="form">
+              <label for="name">Name*</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="form">
+              <label for="phone">Phone*</label>
+              <input type="number" id="phone" />
+            </div>
+            <div class="form">
+              <label for="Email">Email*</label>
+              <input type="Email" id="Email" />
+            </div>
+  
+            <div style="color: black" class="drop-down">
+              <label for="state">state*</label>
+              <select id="state">
+                <option></option>
+                <option>Kerala</option>
+                <option>Telangana</option>
+                <option>Tamil Nadu</option>
+                <option>Andhra Pradesh</option>
+              </select>
+            </div>
+            <div class="but">
+              <button>SUBMIT</button>
+            </div>
+          </form>
+        </div>
+        </div>
+
+    </div>
+   
+
+
+
+    <div class="creat">
+      <div class="creat-1">
+        <h3>Why go for a BulidNext home?</h3>
+      </div>
+      <ul class="function">
+        <li class="active">Functional</li>
+
+        <li>Efficient</li>
+        <li>Durable</li>
+        <li>Safe</li>
+        <li>personalized</li>
+        <li>Ergonomic</li>
+        <li>Environment Friendiy</li>
+        <li>Future proof</li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <div class="contact-1">
+        <img
+          src="https://static.bldnxt.in/skin/frontend/buildnext/green/images/landing_pages/homes/durable.png"
+          alt=""
+        />
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://static.bldnxt.in/skin/frontend/buildnext/green/images/landing_pages/homes/icons/ergonomic-working-position.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Right Working Positions</h5>
+          <p class="card-text">
+            Our designs focus on ergonomics, to make things effortless for you.
+            Whether you are cooking or working, we focus on your comfort.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://static.bldnxt.in/skin/frontend/buildnext/green/images/landing_pages/homes/icons/ergonomic-right-index.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Right Distances</h5>
+          <p class="card-text">
+            Everything in the right place. Weather watching TV or getting a
+            drink from your refrigerator, its neither too far, nor at the wrong
+            place!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="manage">
+      <div class="manage-1">
+        <h1>optimal Design</h1>
+        <p>
+          BuildNext Building Performance <br />
+          Indices ensure that your design<br />
+          gives you the most bang for your<br />
+          buck maximizing space utilization.<br />
+          Your building design will be highly<br />
+          energy efficient with natural<br />
+          lighting & ventilation thus reducing <br />
+          your carbon footprint
+        </p>
+      </div>
+      <div class="manage-2">
+        <div class="manage-3">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="https://t4.ftcdn.net/jpg/03/21/80/19/360_F_321801932_i0XO5LAnSNpKnMxeF4OijfIrOEC9aEB8.jpg"
+                alt=""
+              />
+              <h5 class="card-title">1.46</h5>
+              <p class="card-text">Effective Sq.Ft.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="https://t4.ftcdn.net/jpg/03/21/80/19/360_F_321801932_i0XO5LAnSNpKnMxeF4OijfIrOEC9aEB8.jpg"
+                alt=""
+              />
+              <h5 class="card-title">1.46</h5>
+              <p class="card-text">Effective Sq.Ft.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="https://t4.ftcdn.net/jpg/03/21/80/19/360_F_321801932_i0XO5LAnSNpKnMxeF4OijfIrOEC9aEB8.jpg"
+                alt=""
+              />
+              <h5 class="card-title">1.46</h5>
+              <p class="card-text">Effective Sq.Ft.</p>
+            </div>
+          </div>
+        </div>
+        <div class="manage-3">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="https://t4.ftcdn.net/jpg/03/21/80/19/360_F_321801932_i0XO5LAnSNpKnMxeF4OijfIrOEC9aEB8.jpg"
+                alt=""
+              />
+              <h5 class="card-title">1.46</h5>
+              <p class="card-text">Effective Sq.Ft.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="https://t4.ftcdn.net/jpg/03/21/80/19/360_F_321801932_i0XO5LAnSNpKnMxeF4OijfIrOEC9aEB8.jpg"
+                alt=""
+              />
+              <h5 class="card-title">1.46</h5>
+              <p class="card-text">Effective Sq.Ft.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="https://t4.ftcdn.net/jpg/03/21/80/19/360_F_321801932_i0XO5LAnSNpKnMxeF4OijfIrOEC9aEB8.jpg"
+                alt=""
+              />
+              <h5 class="card-title">1.46</h5>
+              <p class="card-text">Effective Sq.Ft.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="quality">
+      <div class="quality-1">
+        <div class="device-1">
+          <h1>
+            Dreams That We Turned<br />
+            into Reality
+          </h1>
+          <p>Take a look at few of our featured homes.</p>
+        </div>
+        <div class="device-2">
+          <img
+            src="https://assets.bldnxt.in/portfolio_images/15/15929843923845110285ef303485678b_1.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="device-3">
+      <div class="device-4">
+        <img
+          src="https://assets.bldnxt.in/portfolio_images/3/157108245613572266765da4d0d8b215e_anwar-naha-1.jpg"
+          alt=""
+        />
+      </div>
+      <div class="device-5">
+        <img
+          src="https://assets.bldnxt.in/portfolio_images/22/159401945812557109675f02ce82eaf44_5.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="device-6">
+      <div class="device-7">
+        <h1>
+          Ready-To-Build <br />
+          Designs
+        </h1>
+        <p>
+          Highly functional home designs<br />
+          crafted to ensure lifestyle unmatched <br />
+          in the segment! Whatever your <br />
+          budget, we've got you covered.
+        </p>
+      </div>
+    </div>
+    <div class="quality-2">
+      <h1>Planning To Build Your Dream Project?</h1>
+      <button>GET CALLBACK</button>
+    </div>
+
+    <div class="qulity-3">
+      <div class="qulity-4">
+        <div class="qulity-5">
+          <h5>GET TO KNOW US</h5>
+          <p>About Us</p>
+          <p>Featured Home</p>
+          <p>Careers</p>
+          <p>Blog</p>
+        </div>
+        <div class="qulity-5">
+          <h5>POLICY INFO</h5>
+          <p>Privacy policy</p>
+          <p>Return&Refund Policy</p>
+          <p>Report Abuse</p>
+        </div>
+        <div class="qulity-5">
+          <h5>GET TO KNOW US</h5>
+          <p>About Us</p>
+          <p>Featured Home</p>
+          <p>Careers</p>
+          <p>Blog</p>
+        </div>
+        <div class="qulity-4">
+          <div class="qulity-5">
+            <h5>GET TO KNOW US</h5>
+            <p>About Us</p>
+            <p>Featured Home</p>
+            <p>Careers</p>
+            <p>Blog</p>
+          </div>
+        </div>
+      </div>
+      <div class="qulity-4">
+        <div class="qulity-5">
+          <h4>BUILDNEXT APP</h4>
+          <img
+            src="https://static.bldnxt.in/skin/frontend/buildnext/green/images/logo_app_store.png"
+            alt=""
+          />
+          <img
+            src="https://static.bldnxt.in/skin/frontend/buildnext/green/images/logo_play_store.png"
+            alt=""
+          />
+          <h4>CONNECT WITH US</h4>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="qulity-5">
+          <h5>POLICY INFO</h5>
+          <p>Privacy policy</p>
+          <p>Return&Refund Policy</p>
+          <p>career</p>
+        </div>
+        <div class="qulity-5">
+          <h5>GET TO KNOW US</h5>
+          <p>About Us</p>
+          <p>Featured Home</p>
+          <p>Careers</p>
+          <p>Blog</p>
+        </div>
+        <div class="qulity-4">
+          <div class="qulity-5">
+            <h5>GET TO KNOW US</h5>
+            <p>About Us</p>
+            <p>Featured Home</p>
+            <p>Careers</p>
+            <p>Blog</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

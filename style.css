@@ -1,0 +1,515 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    margin: auto;
+    
+    
+}
+.divided{
+    width: 100%;
+    background-color: azure;
+    height: 70px;
+    padding-bottom: 0 !important;
+    position: fixed;
+  
+}
+.divided img{
+    height: 24px;
+    width: 160px;
+    padding: 20px;
+}
+.division {
+    
+    
+    display: flex;
+    flex-direction: row;
+    /* height: 550px; */
+    justify-content: space-around;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://us.123rf.com/450wm/scovad/scovad1610/scovad161000027/65049456-empty-room-interior-background-with-plant-3d-rendering.jpg");
+    
+  }
+
+  
+  .division .division-1 {
+    
+  }
+/* .division-2 {
+    padding-left: 15px;
+   
+  } */
+  .division-2 h1 {
+    font: 48px poppins;
+  }
+  .division-2 p {
+    font: 20px poppins;
+  }
+  .division-2 button {
+    padding: 16px 32px;
+    border-radius: 5px;
+    box-shadow: 1px white;
+    border: 1px solid #fff;
+    background-color: inherit;
+  }
+   .division-2 button:hover {
+    background-color: black;
+    color: white;
+   }  
+  
+  
+ 
+  .sub-division {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color:rgb(249, 241, 241);
+    margin-top: 80px;
+    height: 450px;
+    width: 300px;
+    padding: 0px 20px;
+    border-radius: 10px;
+    
+  }
+  
+  .sub-division label {
+    display: block;
+    
+  }
+  
+  .sub-division form {
+    display: flex;
+    flex-direction: column;
+     width: 300px;
+  align-items: center;
+  justify-content: center;
+
+   }
+  .sub-division form h2 {
+    color: black;
+  }.sub-division form label {
+    color:black;
+  }
+  
+  input {
+    border: none;
+    outline: none;
+    width: 100%;
+   
+    padding: 10px;
+    background: none;
+    width: 250px;
+    border-bottom: 1px solid black;
+  }
+  
+  select {
+    outline: none;
+    /* width: 100%; */
+   
+    padding: 10px;
+    border: none;
+    background: none;
+   
+    color: grey;
+    width: 270px;
+    border-bottom: 1px solid black;
+  }
+.sub-division form button {
+    
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+   margin: 10px;
+   width: 270px;
+   height:40px ;
+  } 
+ 
+
+
+
+
+
+
+
+  .creat {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+  }
+  
+  .function {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 60px;
+    list-style: none;
+    
+   
+  }
+   .function li{
+  
+    padding: 10px ;
+    border-radius: 10px
+  }
+  
+  .heading .function li:hover{
+    background-color: skyblue;
+    color: white;
+  }
+  
+  .creat .function .active{
+    padding: 10px ;
+    border-radius: 10px;
+    background-color: rgb(47, 186, 241);
+    color: white;
+  }
+  .creat .function li:hover{
+    background-color: rgb(47, 186, 241) ;
+  }
+ 
+ .creat-1 h3 {
+    text-align: center;
+  }
+  .contact-1{
+    width: 50%;
+  }
+  .contact-1 img{
+    width: 400px;
+    height: 300px;
+  }
+  .contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+  .contact .card img{
+    width:100px;
+
+  }
+ 
+  .manage {
+    padding: 15px;
+    display: flex;
+    line-height: 25px;
+  
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+  }
+  .manage-1 p {
+  color: gray;
+  font-size: 20px;
+  }
+  
+  
+  .manage .manage-1 {
+    text-align: start;
+  
+    /* display: flex; */
+    /* flex-direction: column; */
+  }
+  .manage-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    
+  }
+  
+  .manage-2 .manage-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+  }
+  
+  
+  .manage-3 .card {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px -6px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    width: 200px;
+    height: 200px;
+  }
+  .manage-3 .card img{
+    width: 100px;
+  }
+  .quality .quality-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: start;
+    width: 100%;
+    overflow: hidden;
+  }
+  .quality-1 .device-1 {
+    width: 50%;
+    text-align: center;
+    padding: 45px;
+    overflow: hidden;
+  }
+  .device-1 p{
+  color: gray;
+  }
+  .device-2 img {
+    width: 540px;
+    min-height: 360px;
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+  
+  }
+  .device-3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 45px;
+    overflow: hidden;
+    background-color: whitesmoke;
+  }
+  
+  .device-4 img {
+    width: 540px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .device-5 img {
+    width: 540px;
+    height: 360px;
+    border-radius: 15px;
+    object-fit: cover;
+    
+}
+.device-6 {
+    padding: 45px;
+    width: 80%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://cdn.mwallpapers.com/photos/celebrities/hd-wallpapers/interior-design-architecture-mansions-modern-house-luxury-android-iphone-hd-wallpaper-background-downloadhd-wallpapers-desktop-background-android-iphone-1080p-4k-suouz.jpg");
+    border-radius: 20px;
+  
+    margin: 70px;
+    
+  
+    
+  }
+  .device-6 .device-7 {
+   
+    padding: 35px;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(196, 187, 187, 0.6);
+    border-radius: 15px;
+    font-size: 15px;
+    position: relative;
+    left: 600px;
+   z-index: 5;
+    
+  }
+  .device-7 p {
+    color: rgb(58, 57, 57);
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+
+.quality-2 {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    position: relative;
+    top: 80px;
+    z-index: -1;
+    background-color: #fff;
+    box-shadow: 5px 5px 19px 8px rgba(0,0,0,0.31); 
+    width: 80%;
+    left: 120px;
+    border-radius: 20px;
+    height: 250px;
+    
+  
+    
+  }
+  .quality-2 button {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    
+  }
+  .quality-2 button:hover {
+    background-color: black;
+    color: white;
+   } 
+ 
+ 
+
+  .qulity-3{
+   width: 100%;
+   padding: 10px;
+  margin-top: 100px;
+  }
+  .qulity-4{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+   
+  }
+  .qulity-5 img{
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 780px) {
+  .divided{
+    position: absolute;
+    width: 100%;
+  }
+  .divided img{
+    padding: 40px;
+    text-align: center;
+  }
+    .division {
+        overflow: hidden;
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+       
+    }
+
+    .division-2{
+        text-align: center;
+    }
+
+    .sub-division{
+        width: 100%;
+    }
+
+    .sub-division form{
+        width: 100%;
+    }
+    .creat{
+        display: flex;
+        flex-direction: column;
+    }
+    .creat .function {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    
+       
+       flex-wrap: wrap;
+       
+      }
+      
+      .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+      }
+      .manage {
+        display: flex;
+        align-items: center;
+        /* flex-direction: column; */
+       
+       
+        
+      }
+      .manage-1{
+        /* padding: 30px; */
+        
+      }
+      .manage-2 .manage-3 {
+        display: flex;
+       
+        flex-wrap: nowrap;
+        
+      }
+      .manage-3 .card{
+        display: flex;
+        flex-wrap: wrap;
+        
+      }
+      .quality .quality-1{
+        display: inline;
+      }
+      .device-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .device-6{
+    width: 90%;
+    height: 550px;
+    margin: 0;
+    position: relative;
+      }
+     .device-6 .device-7{
+        padding: 0;
+        left: 0;
+        position: absolute;
+        bottom: -70%;
+        
+      }
+      /* .device-7{
+        position: relative;
+         width: 450px;
+        height: 350px;
+        } */
+      .quality-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        left: 0;
+        padding: 0;
+
+      }
+      .qulity-3{
+        width: 100%;
+        padding: 10px;
+       margin-top: 100px;
+       
+       }
+       .qulity-4{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+       }
+}
+
+ 
+  
+  
+
+  
